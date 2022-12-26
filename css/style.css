@@ -1,0 +1,465 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container{
+width: 100%;
+height: 100vh;
+background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+url(../images/1.jpg);
+background-position: center;
+background-size: cover;
+box-sizing: border-box;
+padding-left: 8%;
+padding-right: 8%;
+}
+
+
+.navbar{
+  height: 12%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo{
+  cursor: pointer;
+  text-decoration: none;
+  font-family: 'Rubik Spray Paint', cursive;
+    color: white;
+
+}
+
+nav ul:not(.navbarcv ul){
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  background-color: rgba(0, 0, 0,0.2);
+  
+}
+nav ul li{
+padding: 20px;
+font-weight: bold;
+}
+nav ul a{
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  z-index: 3;
+  position: relative;
+}
+nav ul li:hover:not(.navbarcv ul li){
+background-color: grey;
+border-bottom: 2px solid red;
+}
+
+.chip {
+  display: inline-block;
+  padding: 0 10px;
+  line-height: 50px;
+  border-radius: 30px;
+  color: white;
+  padding-top: 60px;
+}
+
+.chip img {
+  float: left;
+  margin: 0 10px 0 -37px;
+  height: 150px;
+  width: 100px;
+   border-radius: 50%; 
+
+}
+
+.one{
+  display: flex; 
+  align-items: center;
+  margin: 20px;
+  border:  1px solid white  ;
+  border-radius: 30px;
+  border-left: transparent;
+
+}
+
+.one h4{
+  margin-left: 10px;
+  padding: 15px;
+}
+.container p{
+font-size: 19px;
+font-weight: 700;
+color: white;
+width: 80%;
+line-height: 30px;
+margin-top: 3%;
+}
+
+.container2{
+  width: 100%;
+  /* height: 100vh; */
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+  url(../images/1.jpg) ;
+  background-position: center;
+  background-size: cover;
+  box-sizing: border-box;
+  padding-left: 8%;
+  padding-right: 8%;
+  }
+  
+
+
+.chip1 {
+  overflow: hidden;
+  display: inline-block;
+  padding: 0 60px;
+  line-height: 50px;
+  border-radius: 30px;
+  color: white;
+  padding-top: 60px;
+}
+
+
+.chip1 img {
+  float: left;
+  margin: 0 10px 0 -37px;
+  height: 150px;
+  width: 120px;
+   border-radius: 50%; 
+
+}
+
+.two:hover{
+transform: scale(1.2);
+transition-duration: 2s;
+
+
+}
+
+.two{
+  display: flex; 
+  align-items: center;
+  margin: 20px;
+  border:  1px solid white  ;
+  border-radius: 30px;
+  border-left: transparent;
+
+}
+
+.two h4{
+  margin-left: 10px;
+  padding: 15px;
+}
+
+.field{
+  width: 31%;
+  border: 2px solid rgb(255, 255, 255); 
+  padding: 15px;
+  border-radius: 15px;
+   color: white; 
+}
+.firstname{
+  margin-left:  1%;
+margin-bottom: 3%;
+}
+
+.legend{
+text-align: center;
+padding: 7px;
+border: 2px solid;
+border-radius: 20px;
+
+}
+
+
+.lastname{
+  margin-left: 1%;
+  margin-bottom: 3%;
+
+}
+
+.email{
+  margin-left:  7%;
+  margin-bottom: 3%;
+
+}
+
+.textarea{
+  margin: 0 0 0 3%;
+}
+
+.submit{
+  width: 25%;
+  background-color: red;
+  color: white;
+  font-weight: bolder;
+  margin-left: 13%;
+  border-radius: 15px;
+  margin-top: 3%;
+}
+
+
+
+/* footer style  */
+footer{
+  margin: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(0, 0, 0,0.5);
+  color: white;
+  text-align: center;
+  display: flex;
+  align-content: space-between;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  margin-top: 45px
+}
+/* icon */
+
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px;
+  
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+
+/* countries style */
+
+.slider {
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  height: 80vh;
+  background-image: url("../images/qatar.jpg");
+  background-size: 100% 100%;
+  animation: slider 15s infinite ease-in-out;
+
+}
+
+@keyframes slider {
+  0% {
+      background-image: url("../images/japan.jpg");
+  }
+
+  25% {
+      background-image: url("../images/Emirates.jpg");
+  }
+
+  50% {
+      background-image: url("../images/france.jpg");
+  }
+
+  75% {
+      background-image: url("../images/Shanghai.jpg");
+  }
+
+  100% {
+      background-image: url("../images/Turkey.jpg");
+  }
+
+}
+
+.contents {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-weight: bold;
+  border-radius: 15px;
+  padding: 10px;
+  border-bottom: 3px solid white;
+}
+
+.countries1::after {
+  content: 'Qatar';
+  animation: countries1 15s infinite ease-in-out;
+
+}
+
+@keyframes countries1 {
+  0% {
+      content: 'japan';
+
+  }
+
+  25% {
+      content: 'United Arab Emirates';
+
+  }
+
+  50% {
+      content: ' France';
+
+  }
+
+  75% {
+      content: 'Shanghai';
+
+  }
+
+  100% {
+      content: 'Turkey';
+
+  }
+
+}
+/* style for birthday page  */
+.image {
+  position: absolute;
+  width:500px;
+  height: 365px;
+  z-index: 0;
+  animation-name: boxText;
+  animation-duration: 3s;
+  animation-fill-mode: linear;
+}
+.image img{
+  width: 100%;
+  height: 100%;
+
+}
+
+.text-area{
+  width: 500px;
+  height: 365px;
+  z-index: 1;
+  position:absolute;
+}
+.textarea1{
+  width: 500px;
+  height: 365px;
+
+  }
+@keyframes boxText{
+   0%{
+      z-index: 2;
+      
+   }
+   90%{
+    z-index: 2;
+   }
+   100%{
+      z-index: 0;
+      
+   }
+}
+
+/* cv style */
+
+
+.cv {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  border: 2px solid grey;
+
+}
+
+.left {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 28%;
+  height: 100%;
+  padding: 20px;
+  color: white;
+}
+
+.right {
+  width: 100%;
+
+}
+
+.myimage {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.top-page {
+  padding-left: 15px;
+  margin-top: 30px;
+}
+
+.myimage img {
+  width: 100px;
+  border-radius: 50%;
+  border: 3px solid grey;
+  margin-bottom: 50px;
+
+}
+
+.cv-content{
+  padding: 15px;
+}
+.cv-content h3{
+  color: white;
+  padding-left: 5px;
+background-color: #14A6BC;
+margin-bottom: 30px;
+}
+.skills-ul{
+padding-left: 50px;
+}
+
+.navbarcv{
+  background-color: #14A6BC;
+  display: flex;
+  height: 12%;
+  align-items: center;
+  justify-content: space-between;
+} 
+.navbarcv .logo{ 
+  margin-left: 20px;
+}
+.navbarcv nav{
+  overflow: hidden;
+}
+.navbarcv  nav ul{
+  margin-right:20px;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  
+}
+.navbarcv ul li{
+padding: 20px;
+font-weight: bold;
+}
+.navbarcv ul a{
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  z-index: 3;
+  position: relative;
+}
+.navbarcv ul li:hover{
+background-color: rgba(71, 71, 71, 0.329) ;
+
+}
